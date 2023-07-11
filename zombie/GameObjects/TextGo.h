@@ -16,6 +16,8 @@ public:
 	virtual void SetOrigin(Origins origin);
 	virtual void SetOrigin(float x, float y);
 
+	virtual void SetString(const std::string& str);
+
 	virtual void Init() override;
 	virtual void Release() override;
 	virtual void Reset() override;

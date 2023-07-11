@@ -41,6 +41,13 @@ void TextGo::SetOrigin(float x, float y)
 	text.setOrigin(x, y);
 }
 
+void TextGo::SetString(const std::string& str)
+{
+	std::string utf8String = str;
+	sf::String unicodeString = sf::String::fromUtf8(utf8String.begin(), utf8String.end());
+	text.setString(unicodeString);
+}
+
 void TextGo::Init()
 {
 }
